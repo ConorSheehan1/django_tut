@@ -1,0 +1,10 @@
+# setup env
+conda create -n django-tut python=3.6
+source activate django-tut
+pip install django
+
+# start project
+django-admin.py startproject ecommerce . 
+
+# start server
+python manage.py runserver 8888
