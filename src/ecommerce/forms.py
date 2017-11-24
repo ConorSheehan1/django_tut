@@ -9,4 +9,8 @@ class ContactForm(forms.Form):
         email = self.cleaned_data.get('email')
         if not 'gmail.com' in email:
             raise forms.ValidationError('Email has to be gmail')
-            
+
+
+class LoginForm(forms.Form):
+    username = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','placeholder':'username'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class':'form-control','placeholder':'password'}))

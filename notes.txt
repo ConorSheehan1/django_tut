@@ -8,3 +8,9 @@ django-admin.py startproject ecommerce .
 
 # start server
 python manage.py runserver 8888
+
+# run db migration
+python manage.py migrate
+
+# create admin
+python manage.py createsuperuser
